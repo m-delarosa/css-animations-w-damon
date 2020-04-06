@@ -1,0 +1,41 @@
+body {
+  background-color: darkblue;
+}
+
+#sun {
+  width: 100px;
+  height: 100px;
+  margin-top: 400px;
+  background-color: rgb(255, 204, 0);
+  border-radius: 50%;
+  /* animation: slide 5s infinite alternate; */
+  /* Above is shorthand. Broken out below */
+  animation: slide;
+  animation-duration: 5s;
+  animation-iteration-count: infiinte;
+  animation-direction: alternate
+  animation-timing-function: linear
+  /* To customize timing use cubic bezier */
+  position: relative;
+}
+
+@keyframes slide {
+  /* from {
+    left: 0;
+  }
+  to {
+    left: 1200px;
+  } */
+
+  0% {
+    left: 0;
+    top: 0;
+  }
+  70% {
+    top: -200px;
+  }
+  100% {
+    left: 1800px;
+    top: 0;
+  }
+}
